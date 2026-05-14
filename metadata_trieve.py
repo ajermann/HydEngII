@@ -40,7 +40,7 @@ for image_file in os.listdir(image_path):
                     break
 
 
-'''# Filter out timestamps within 5 seconds of the previous one
+# Filter out timestamps within 5 seconds of the previous one
 indices_to_remove = []
 for i in range(1, len(dict['timestamp'])):
     if dict['timestamp'][i] is not None and dict['timestamp'][i-1] is not None:
@@ -62,7 +62,7 @@ for i in reversed(indices_to_remove):
     dict['timestamp'].pop(i)
 
 print(f"\nRemoved {len(indices_to_remove)} entries with timestamps too close together")
-print(f"Remaining entries: {len(dict['name'])}")'''
+print(f"Remaining entries: {len(dict['name'])}")
 
 
 output_path = "output/fish.csv"
