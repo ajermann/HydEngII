@@ -68,3 +68,6 @@ print(f"Remaining entries: {len(dict['name'])}")
 output_path = "output/fish.csv"
 pd.DataFrame(dict).to_csv(output_path, index=False)
 print(f"Saved CSV to: {output_path}")
+
+
+print('Done! Check the output folder for the generated CSV file.')
