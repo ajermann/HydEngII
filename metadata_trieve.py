@@ -5,6 +5,16 @@ import csv
 import os
 from datetime import datetime
 
+'''
+This script retrieves metadata for images in the "Fish_confirmed_human" folder, extracts timestamps 
+from corresponding metadata CSV files, and filters out entries with timestamps that are too close together.
+The resulting data is saved to a new CSV file in the output folder.
+
+When changing from fish to insects, update the image path and the output file name accordingly.
+Metadata references should still be the same as they are based on the folder number, which is 
+extracted from the image filename.
+
+'''
 
 image_path = "Classified/HYDO2_250524_all_roi_2/Fish_confirmed_human/"
 
